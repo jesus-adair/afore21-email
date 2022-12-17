@@ -10,6 +10,63 @@
       .custom-font {
         font-family: 'Oswald', sans-serif;
       }
+
+      .hide-ghost-column {
+        width: 0;
+        display: none;
+      }
+
+      .hide-on-desktop {
+        display: none;
+      }
+
+      @media (max-width: 480px) {
+        .column {
+          width: 100% !important;
+          height: auto !important;
+          display: block !important;
+        }
+        
+        .bottom-spacer {
+          margin-bottom: 30px !important;
+        }
+
+        .bottom-spacer-sm {
+          margin-bottom: 15px !important;
+        }
+
+        .text-center-mobile-only {
+          text-align: center !important;
+        }
+        
+        .hide-ghost-column {
+          width: initial !important;
+          display: initial !important;
+        }
+
+        .hide-on-mobile {
+          display: none !important;
+        }
+
+        .hide-on-desktop {
+          display: initial !important;
+        }
+
+        .whatsapp-image {
+          width: 180px !important;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .playstore-image {
+          width: 90px !important;
+        }
+
+        .appstore-image {
+          width: 90px !important;
+        }
+      }
     </style>
   </head>
   <body style="margin: 0">
@@ -49,17 +106,6 @@
             cellpadding="0"
             cellspacing="0"
           >
-            <tr>
-              <td style="width: 20px; padding-right: 15px; padding-bottom: 15px;">
-                <img src="images/icon-check@2x.png" width="20px" height="20px" />
-              </td>
-              <td
-                class="custom-font"
-                style="padding-bottom: 15px; color: #00624b; font-size: 18px; "
-              >
-                Cumple tus sueños
-              </td>
-            </tr>
             <tr>
               <td style="width: 20px; padding-right: 15px; padding-bottom: 15px;">
                 <img src="images/icon-check@2x.png" width="20px" height="20px" />
@@ -137,25 +183,61 @@
             cellspacing="0"
           >
             <tr style="vertical-align: baseline;">
-              <td style="width: 33%">
-                <p class="custom-font" style="text-transform: uppercase; color: #00624b; font-size: 14px; margin-top: 0; margin-bottom: 0px;">Contáctanos</p>
+              <td style="width: 33%" class="column bottom-spacer">
+                <p class="custom-font text-center-mobile-only" style="text-transform: uppercase; color: #00624b; font-size: 14px; margin-top: 0; margin-bottom: 0px;">Contáctanos</p>
                 <img
-                src="./images/footer-whastapp.png"
-                alt=""
-                width="100%"
-              />
+                  src="./images/footer-whastapp.png"
+                  alt=""
+                  width="100%"
+                  class="whatsapp-image"
+                />
               </td>
-              <td style="width: 33%">
-                <p class="custom-font" style="text-transform: uppercase; color: #00624b; font-size: 14px; margin-top: 0; margin-bottom: 0;">Descarga la app</p>
-                <img
-              src="./images/footer-playstore.png"
-              alt=""
-              width="100%"
-            />
+              <td style="width: 33%" class="column bottom-spacer hide-on-mobile">
+                <p class="custom-font text-center-mobile-only" style="text-transform: uppercase; color: #00624b; font-size: 14px; margin-top: 0; margin-bottom: 0;">
+                  Descarga la app
+                </p>
+                <table 
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                >
+                  <tr>
+                    <td>
+                      <img
+                        src="./images/app-afore-banorte.png"
+                        alt=""
+                        width="40px"
+                      />
+                    </td>
+                    <td>
+                      <p class="custom-font" style="text-transform: uppercase; color: #00624b; font-size: 10px; margin-top: 0; margin-bottom: 0px;">AforeMóvil XXI Banorte Lite</p>
+                      <table>
+                        <tr>
+                          <td>
+                            <a href="#">
+                              <img
+                                src="./images/playstore.png"
+                                width="55px"
+                              >
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <img
+                                src="./images/appstore.png"
+                                width="55px"
+                              >
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
-              
-              <td style="width: 34%">
-                <p class="custom-font" style="text-transform: uppercase; color: #00624b; font-size: 14px; margin-top: 0; margin-bottom: 20px;">Síguenos</p>
+              <td style="width: 34%" class="column bottom-spacer">
+                <p class="custom-font text-center-mobile-only" style="text-transform: uppercase; color: #00624b; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Síguenos</p>
                 <table
                   width="100%"
                   border="0"
@@ -163,6 +245,7 @@
                   cellspacing="0"
                 >
                   <tr>
+                    <td class="hide-ghost-column"></td>
                     <td style="width: 24px; padding-right: 5px;">
                       <a href="https://www.facebook.com/xxibanorte">
                         <img
@@ -209,6 +292,52 @@
                       </a>
                     </td>
                     <td></td>
+                  </tr>
+                </table>
+              </td>
+              <td style="width: 33%" class="column bottom-spacer hide-on-desktop">
+                <p class="custom-font bottom-spacer-sm text-center-mobile-only" style="text-transform: uppercase; color: #00624b; font-size: 14px; margin-top: 0; margin-bottom: 0;">
+                  Descarga la app
+                </p>
+                <table 
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                >
+                  <tr>
+                    <td class="column text-center-mobile-only bottom-spacer-sm">
+                      <img
+                        src="./images/app-afore-banorte.png"
+                        alt=""
+                        width="40px"
+                      />
+                    </td>
+                    <td class="column">
+                      <p class="custom-font text-center-mobile-only" style="text-transform: uppercase; color: #00624b; font-size: 10px; margin-top: 0; margin-bottom: 0px;">AforeMóvil XXI Banorte Lite</p>
+                      <table>
+                        <tr>
+                          <td>
+                            <a href="#">
+                              <img
+                                src="./images/playstore.png"
+                                width="55px"
+                                class="playstore-image"
+                              >
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <img
+                                src="./images/appstore.png"
+                                width="55px"
+                                class="appstore-image"
+                              >
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
                   </tr>
                 </table>
               </td>
