@@ -20,7 +20,7 @@
         display: none;
       }
 
-      @media (max-width: 480px) {
+      @media (max-width: 520px) {
         .column {
           width: 100% !important;
           height: auto !important;
@@ -66,17 +66,18 @@
         .appstore-image {
           width: 90px !important;
         }
-
-        .remove-bg-on-mobile {
-          background-image: none !important;
-        }
       }
     </style>
   </head>
   <body style="margin: 0">
     <table
       width="100%"
-      style="max-width: 600px"
+      style="
+        max-width: 600px;
+        background-image: url('images/sprite.png');
+        background-repeat: repeat;
+        background-size: cover;
+      "
       align="center"
       border="0"
       cellpadding="0"
@@ -99,38 +100,50 @@
             border="0"
             cellpadding="0"
             cellspacing="0"
-            style="
-              background-image: url('./images/bg-mail.png');
-              background-size: 100% 100%;
-              background-position: center;
-              background-repeat: no-repeat;
-            "
             class="remove-bg-on-mobile"
           >
             <tr>
-              <td
-                class="custom-font"
-                style="
-                  text-align: center;
-                  font-size: 36px;
-                  padding-top: 20px;
-                  padding-bottom: 20px;
-                  color: #557677;
-                  font-weight: 600;
-                "
-              >
-                ¡En esta época de fiestas!
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  padding-bottom: 15px;
-                  padding-left: 15%;
-                  padding-right: 15%;
-                "
-              >
-                <hr width="100%" style="border-color: #ee3d5a" />
+              <td>
+                <table
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                    background-image: url('images/bg-1.png');
+                    background-position: top right;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <tr>
+                    <td
+                      class="custom-font"
+                      style="
+                        text-align: center;
+                        font-size: 36px;
+                        color: #557677;
+                        font-weight: 600;
+                        padding-bottom: 20px;
+                      "
+                    >
+                      ¡En esta época de fiestas!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        padding-bottom: 15px;
+                        padding-left: 15%;
+                        padding-right: 15%;
+                      "
+                    >
+                      <hr width="100%" style="border-color: #ee3d5a" />
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
@@ -598,44 +611,67 @@
               </td>
             </tr>
             <tr>
-              <td
-                style="
-                  padding-bottom: 15px;
-                  padding-left: 5%;
-                  padding-right: 5%;
-                "
-              >
-                <hr style="border-color: #ee3d5a" />
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="custom-font"
-                style="
-                  text-align: center;
-                  font-size: 10px;
-                  padding-bottom: 10px;
-                  color: #557677;
-                  width: 50%;
-                  margin-left: auto;
-                  margin-right: auto;
-                  display: block;
-                  padding-bottom: 60px;
-                  font-weight: 400;
-                "
-              >
-                Los recursos en tu Cuenta Individual son tuyos. Infórmate en:
-                <a href="www.gob.mx/consar" style="color: #557677"
-                  >www.gob.mx/consar</a
+              <td>
+                <table
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  class="remove-bg-on-mobile"
+                  width="100%"
+                  style="
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                    background-image: url('images/bg-2.png');
+                    background-position: bottom left;
+                    background-repeat: no-repeat;
+                  "
                 >
-                Más información en:
-                <a href="www.xxi-banorte.com" style="color: #557677"
-                  >www.xxi-banorte.com</a
-                >
-                Consulta nuestro Aviso de Privacidad en:
-                <a href="www.xxi-banorte.com/privacidad/" style="color: #557677"
-                  >www.xxi-banorte.com/privacidad/</a
-                >
+                  <tr>
+                    <td
+                      style="
+                        padding-bottom: 15px;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                      "
+                    >
+                      <hr style="border-color: #ee3d5a" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="custom-font"
+                      style="
+                        text-align: center;
+                        font-size: 10px;
+                        padding-bottom: 10px;
+                        color: #557677;
+                        width: 50%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+                        padding-bottom: 60px;
+                        font-weight: 400;
+                      "
+                    >
+                      Los recursos en tu Cuenta Individual son tuyos. Infórmate
+                      en:
+                      <a href="www.gob.mx/consar" style="color: #557677"
+                        >www.gob.mx/consar</a
+                      >
+                      Más información en:
+                      <a href="www.xxi-banorte.com" style="color: #557677"
+                        >www.xxi-banorte.com</a
+                      >
+                      Consulta nuestro Aviso de Privacidad en:
+                      <a
+                        href="www.xxi-banorte.com/privacidad/"
+                        style="color: #557677"
+                        >www.xxi-banorte.com/privacidad/</a
+                      >
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
